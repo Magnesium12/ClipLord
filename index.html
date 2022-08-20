@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip Lord</title>
+    
+</head>
+<body>
+    <div>
+        <label for="text">Enter some text</label>
+        <input type="text" name="text" id="text">
+        <button type="button" id="copy" onclick="save_text()">Copy It!</button>
+    </div>
+    <div>
+        <label for="ptext">Paste Text here: </label>
+        <input type="text" name="ptext" id="ptext" value="" disabled="true">
+        <button type="button" id="paste" onclick="paste_text()">Paste copied text</button>
+    </div>
+    <div id="copied"></div>
+    <script src="./index.js" ></script>
+</body>
+</html>
